@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'djoser',
 
     'post_app',
+    'subscription_app',
 ]
 
 MIDDLEWARE = [

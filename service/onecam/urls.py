@@ -10,7 +10,7 @@ urlpatterns = [
     path('auth/', include('djoser.urls.authtoken')),
 
     # post_app urls
-    path('api/v1/', include('post_app.urls'))
-
+    path('api/v1/', include('post_app.urls')),
+    path('api/v1/', include('subscription_app.urls')),
 
 ]
