@@ -22,3 +22,10 @@ class UserPostRelationsSerializer(serializers.ModelSerializer):
         model = UserPostRelations
         fields = ('id', 'user', 'post', 'is_liked', 'in_bookmarks', 'is_viewed',)
         read_only_fields = ('id', 'user', 'post', 'is_viewed')
+
+
+class UserCommentRelationsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserCommentRelations
+        fields = ('id', 'user', 'comment', 'is_liked')
+        read_only_fields = ('id', 'user', 'comment',)
