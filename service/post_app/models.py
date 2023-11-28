@@ -31,7 +31,7 @@ class Comment(models.Model):
     likes = models.PositiveIntegerField(default=0, blank=True)
 
     def __str__(self) -> str:
-        return f'Comment: {self.user}'
+        return f'Comment: {self.owner}'
 
 
 class UserPostRelations(models.Model):
